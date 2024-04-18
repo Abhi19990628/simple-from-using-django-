@@ -4,7 +4,7 @@ from datetime import date
 class PersonForm(forms.ModelForm):
     class Meta:
         model = person 
-        fields = ['name', 'date_of_birth', 'email', 'phone_number']
+        fields = ['firstname','lastname', 'date_of_birth', 'email', 'phone_number']
         
     
     

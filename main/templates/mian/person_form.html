@@ -66,8 +66,10 @@
         <h1>Person Form</h1>
         <form method="post">
             {% csrf_token %}
-            <label for="id_name">Name:</label>
-            {{ form.name }}
+            <label for="id_firstname">Firstname:</label>
+            {{ form.firstname }}
+            <label for="id_lastname">LastName:</label>
+            {{ form.lastname }}
             <label for="id_date_of_birth">Date of Birth:</label>
             {{ form.date_of_birth }}
             {% if form.date_of_birth.errors %}
