@@ -66,9 +66,9 @@
         <h1>Person Form</h1>
         <form method="post">
             {% csrf_token %}
-            <label for="id_firstname">Firstname:</label>
+            <label for="id_firstname">First name:</label>
             {{ form.firstname }}
-            <label for="id_lastname">LastName:</label>
+            <label for="id_lastname">Last name:</label>
             {{ form.lastname }}
             <label for="id_date_of_birth">Date of Birth:</label>
             {{ form.date_of_birth }}
